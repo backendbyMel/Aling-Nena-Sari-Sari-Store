@@ -4,78 +4,101 @@
     <title>Aling Nena's Sari Sari Store</title>
   </head>
   <body>
-    <h1>Welcome to Aling Nena's Sari Sari Store</h1>
-    <h2>Store Announcements</h2>
-    <h3>Today's Specials</h3>
-    <p>The store opens from 8am to 5pm every day.</p>
-    <p>Spend ₱1,000, save ₱100; spend ₱2,500, save ₱350.</p>
+    
+      <header>
+        <h1>Welcome to Aling Nena's Sari Sari Store</h1>
+        <img src="store_front.jpg" alt="Sample Picture of the Store Front" width="700" height="500">
+      </header>
+      
+      <nav>
+        <a href="#inventory">Jump to Inventory</a>
+        <a href="https://www.w3schools.com/" target="_blank">Distributor Links</a>
+      </nav>
 
-    <a href="#inventory">Jump to Inventory</a>
-    <h3>Distributor</h3>
-    <a href="https://www.w3schools.com/" target="_blank">Distributor 1</a>
+    <main>
+      <section id="announcements">
+        <h2>Store Announcements</h2>
+        <h3>Today's Specials</h3>
+        <p>The store opens from 8am to 5pm every day.</p>
+        <p>Spend ₱1,000, save ₱100; spend ₱2,500, save ₱350.</p>
+      </section>
 
-    <img src="store_front.jpg" alt="Sample Picture of the Store Front" width="700" height="500">
+      <section id="inventory">
+        <h4>Popular Snacks</h4>
+        <ul>
+          <li>Clover - 10.00</li>
+          <li>Inihaw na Bangus - 10.00</li>
+          <li>Mang Juan - 10.00</li>
+        </ul>
+      
+        <h4>Steps</h4>
+        <ol>
+          <li>Item Reservation</li>
+          <li>Downpayment Confirmation</li>
+          <li>Notification and Pickup</li>
+        </ol>
 
-    <h4>Popular Snacks</h4>
-    <ul>
-      <li>Clover - 10.00</li>
-      <li>Inihaw na Bangus - 10.00</li>
-      <li>Mang Juan - 10.00</li>
-    </ul>
+        <h3>Snack Inventory Table</h3>
+        <table>
+          <caption>Current Snack Inventory</caption>
+          <tr>
+            <th scope="col">Item Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price (PHP)</th>
+            <th scope="col">Stock Status</th>
+          </tr>
+          <tr>
+            <td>Piattos</td>
+            <td>Food</td>
+            <td>20.00</td>
+            <td>20 available on stock</td>
+          </tr>
+          <tr>
+            <td>Coffee</td>
+            <td>Beverage</td>
+            <td>8.00 per stick</td>
+            <td>80 box available(40 pcs. per stock)</td>
+          </tr>
+          <tr>
+            <td>Coke Mismo</td>
+            <td>Beverage</td>
+            <td>25.00</td>
+            <td>100 available on stock</td>
+          </tr>
+        </table>
+      </section>
 
-    <h4>Steps</h4>
-    <ol>
-      <li>Item Reservation</li>
-      <li>Downpayment Confirmation</li>
-      <li>Notification and Pickup</li>
-    </ol>
+      <aside>
+        <dl>
+          <dt>Tingi</dt>
+          <dd>The practice of selling items in small, individual, or retail quantities (e.g., a single cigarette, a single sachet of shampoo) rather than by the full pack.</dd>
 
-    <dl>
-      <dt>Tingi</dt>
-      <dd>The practice of selling items in small, individual, or retail quantities (e.g., a single cigarette, a single sachet of shampoo) rather than by the full pack.</dd>
+          <dt>Pautang</dt>
+          <dd>A store credit ledger system that allows trusted regular customers to buy goods now and pay for them later, usually tracked in a physical notebook or digital log.</dd>
 
-      <dt>Pautang</dt>
-      <dd>A store credit ledger system that allows trusted regular customers to buy goods now and pay for them later, usually tracked in a physical notebook or digital log.</dd>
+          <dt>Patong</dt>
+          <dd>The micro-markup or profit margin added to the wholesale cost of an item, typically calculated per piece or unit.</dd>
+        </dl>
+      </aside>
 
-      <dt>Patong</dt>
-      <dd>The micro-markup or profit margin added to the wholesale cost of an item, typically calculated per piece or unit.</dd>
-    </dl>
-    <h3 id="inventory">Snack Inventory Table</h3>
-    <table>
-      <caption>Current Snack Inventory</caption>
-      <tr>
-        <th scope="col">Item Name</th>
-        <th scope="col">Category</th>
-        <th scope="col">Price (PHP)</th>
-        <th scope="col">Stock Status</th>
-      </tr>
-      <tr>
-        <td>Piattos</td>
-        <td>Food</td>
-        <td>20.00</td>
-        <td>20 available on stock</td>
-      </tr>
-      <tr>
-        <td>Coffee</td>
-        <td>Beverage</td>
-        <td>8.00 per stick</td>
-        <td>80 box available(40 pcs. per stock)</td>
-      </tr>
-      <tr>
-        <td>Coke Mismo</td>
-        <td>Beverage</td>
-        <td>25.00</td>
-        <td>100 available on stock</td>
-      </tr>
-    </table>
-    <form action="#" method="post">
-      <label for="customer_name">Name</label>
-      <input type="text" id="customer_name" name="customer_name" placeholder="Input your name">
-      <label for="contact_number">Contact Number</label>
-      <input type="text" name="contact_number" id="contact_number" placeholder="Input your contact number" />
-      <label for="inquiry">Message</label>
-      <textarea id="inquiry" name="inquiry" rows="4" placeholder="Type your inquiry/concern"></textarea>
-      <button type="submit">Submit</button>
-    </form>
+      
+        
+      
+
+      <section id="contact">
+        <form action="#" method="post">
+          <label for="customer_name">Name</label>
+          <input type="text" id="customer_name" name="customer_name" placeholder="Input your name">
+          <label for="contact_number">Contact Number</label>
+          <input type="text" name="contact_number" id="contact_number" placeholder="Input your contact number" />
+          <label for="inquiry">Message</label>
+          <textarea id="inquiry" name="inquiry" rows="4" placeholder="Type your inquiry/concern"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <footer>
+        <p>&copy; 2026 Aling Nena's Sari-Sari Store. All rights reserved.</p>
+      </footer>
+    </main>
   </body>
 </html>
