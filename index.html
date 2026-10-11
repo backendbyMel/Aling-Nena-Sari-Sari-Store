@@ -41,30 +41,39 @@
         <h3>Snack Inventory Table</h3>
         <table>
           <caption>Current Snack Inventory</caption>
-          <tr>
-            <th scope="col">Item Name</th>
-            <th scope="col">Category</th>
-            <th scope="col">Price (PHP)</th>
-            <th scope="col">Stock Status</th>
-          </tr>
-          <tr>
-            <td>Piattos</td>
-            <td>Food</td>
-            <td>20.00</td>
-            <td>20 available on stock</td>
-          </tr>
-          <tr>
-            <td>Coffee</td>
-            <td>Beverage</td>
-            <td>8.00 per stick</td>
-            <td>80 box available(40 pcs. per stock)</td>
-          </tr>
-          <tr>
-            <td>Coke Mismo</td>
-            <td>Beverage</td>
-            <td>25.00</td>
-            <td>100 available on stock</td>
-          </tr>
+          <thead>
+            <tr>
+              <th scope="col">Item Name</th>
+              <th scope="col">Category</th>
+              <th scope="col">Price (PHP)</th>
+              <th scope="col">Stock Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Piattos</th>
+              <td>Food</td>
+              <td>20.00</td>
+              <td>20 available on stock</td>
+            </tr>
+            <tr>
+              <th scope="row">Coffee</th>
+              <td rowspan="2">Beverage</td>
+              <td>8.00 per stick</td>
+              <td>80 box available(40 pcs. per stock)</td>
+            </tr>
+            <tr>
+              <th scope="row">Coke Mismo</th>
+              <td>25.00</td>
+              <td>100 available on stock</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="3" colspan="3">Total</th>
+              <td>200 total stocks</td>
+            </tr>
+          </tfoot>
         </table>
       </section>
 
@@ -96,6 +105,9 @@
           <button type="submit">Submit</button>
         </form>
       </section>
+  
+
+
       <footer>
         <p>&copy; 2026 Aling Nena's Sari-Sari Store. All rights reserved.</p>
       </footer>
