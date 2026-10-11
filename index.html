@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <title>Aling Nena's Sari Sari Store</title>
   </head>
@@ -7,28 +7,28 @@
     
       <header>
         <h1>Welcome to Aling Nena's Sari Sari Store</h1>
-        <img src="store_front.jpg" alt="Sample Picture of the Store Front" width="700" height="500">
+        <img src="store_front.jpg" alt="Sample Picture of the Store Front" title="Aling Nena's Storefront Showcase" width="700" height="500">
       </header>
       
       <nav>
-        <a href="#inventory">Jump to Inventory</a>
-        <a href="https://www.w3schools.com/" target="_blank">Distributor Links</a>
+        <a href="#inventory" title="Jump down to snack inventory">Jump to Inventory</a>
+        <a href="https://www.w3schools.com/" target="_blank" title="Opens supplier portal in a new tab">Distributor Links</a>
       </nav>
 
     <main>
-      <section id="announcements">
+      <section id="announcements" class="card">
         <h2>Store Announcements</h2>
         <h3>Today's Specials</h3>
         <p>The store opens from 8am to 5pm every day.</p>
         <p>Spend ₱1,000, save ₱100; spend ₱2,500, save ₱350.</p>
       </section>
 
-      <section id="inventory">
+      <section id="inventory" class="card">
         <h4>Popular Snacks</h4>
         <ul>
-          <li>Clover - 10.00</li>
-          <li>Inihaw na Bangus - 10.00</li>
-          <li>Mang Juan - 10.00</li>
+          <li data-category="snack">Clover - 10.00</li>
+          <li>Inihaw na Bangus - 10.00</li data-category="snack">
+          <li data-category="snack">Mang Juan - 10.00</li>
         </ul>
       
         <h4>Steps</h4>
@@ -51,26 +51,26 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">Piattos</th>
+              <th scope="row" data-item-id="101">Piattos</th>
               <td>Food</td>
               <td>20.00</td>
               <td>20 available on stock</td>
             </tr>
             <tr>
-              <th scope="row">Coffee</th>
+              <th scope="row" data-item-id="102">Coffee</th>
               <td rowspan="2">Beverage</td>
               <td>8.00 per stick</td>
               <td>80 box available(40 pcs. per stock)</td>
             </tr>
             <tr>
-              <th scope="row">Coke Mismo</th>
+              <th scope="row" data-item-id="103">Coke Mismo</th>
               <td>25.00</td>
               <td>100 available on stock</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <th scope="3" colspan="3">Total</th>
+              <th scope="row" colspan="3">Total</th>
               <td>200 total stocks</td>
             </tr>
           </tfoot>
@@ -105,12 +105,9 @@
           <button type="submit">Submit</button>
         </form>
       </section>
-  
-
-
-      <footer>
+    </main>
+    <footer>
         <p>&copy; 2026 Aling Nena's Sari-Sari Store. All rights reserved.</p>
       </footer>
-    </main>
   </body>
 </html>
