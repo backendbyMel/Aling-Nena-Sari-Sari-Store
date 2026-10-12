@@ -80,12 +80,42 @@
       <section id="pre-order-form">
         <h3>Pre-Order Form</h3>
         <form action="#" method="post">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Type your email..." required>
-          <label for="phone_number">Phone Number:</label>
-          <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{11}" placeholder="09123456789" required />
-          <label for="item_quantity">Item Quantity:</label>
-          <input type="number" id="item_quantity" name="item_quantity" min="20" max="100" required />
+          <fieldset>
+            <legend>Personal Information</legend>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Type your email..." required>
+              <label for="phone_number">Phone Number:</label>
+              <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{11}" placeholder="09123456789" required />
+          </fieldset>
+          <fieldset>
+            <legend>Product Purchase Information</legend>
+            <label for="product_name">Product:</label>
+            <select id="product_name" name="product_name">
+              <option value="">Please choose an option</option>
+              <option value="piattos">Piattos</option>
+              <option value="coffee">Coffee</option>
+              <option value="coke_mismo">Coke Mismo</option>
+            </select>
+            <label for="item_quantity">Item Quantity:</label>
+            <input type="number" id="item_quantity" name="item_quantity" min="20" max="100" required />
+          </fieldset>
+          <fieldset>
+            <legend>Product Suggestions</legend>
+
+            <div>
+              <label for="suggest_product">Suggest a Product:</label>
+              <input list="product_suggestions" id="suggest_product" name="suggest_product" placeholder="Type or select a product...">
+              
+              <datalist id="product_suggestions">
+                <option value="Cigarette - Marlboro">
+                <option value="Instant Noodles - Lucky Me">
+                <option value="Canned Goods - Century Tuna">
+                <option value="Sachet Shampoo - Palmolive">
+              </datalist>
+            </div>
+          </fieldset>
+
+          
           <button type="submit">Submit</button>
 
         </form>
