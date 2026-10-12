@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://aling-nena-store.com/">
     <meta property="og:title" content="Aling Nena Sari Sari Store">
     <meta property="og:description" content="Exclusive online catalog and pre-order store for Aling Nena's Sari-Sari Store.">
-    <meta property="og:image" content="https://web.site/sm.jpg">
+    <meta property="og:image" content="https://aling-nena-store.com/store_front.jpg">
     <meta property="og:image:alt" content="Illustration showing the store of Aling Nena">
     <meta property="og:type" content="website">
   </head>
@@ -91,23 +91,52 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <th scope="row" data-item-id="101">Piattos</th>
-              <td>Food</td>
-              <td>&#8369; 20.00</td>
-              <td>20 available on stock</td>
+            
+            <tr itemscope itemtype="https://schema.org/Product">
+              <th scope="row" data-item-id="101" itemprop="name">Piattos</th>
+              <td itemprop="category">Food</td>
+              
+              <td itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="PHP">
+                &#8369; <span itemprop="price">20.00</span>
+              </td>
+              
+              <td itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <link itemprop="availability" href="https://schema.org/InStock">
+                20 available on stock
+              </td>
             </tr>
-            <tr>
-              <th scope="row" data-item-id="102">Coffee</th>
-              <td rowspan="2">Beverage</td>
-              <td>&#8369; 8.00 per stick</td>
-              <td>80 box available(40 pcs. per stock)</td>
+
+            <tr itemscope itemtype="https://schema.org/Product">
+              <th scope="row" data-item-id="102" itemprop="name">Coffee</th>
+              <td itemprop="category">Beverage</td>
+              
+              <td itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="PHP">
+                &#8369; <span itemprop="price">8.00</span> per stick
+              </td>
+              
+              <td itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <link itemprop="availability" href="https://schema.org/InStock">
+                80 box available (40 pcs. per stock)
+              </td>
             </tr>
-            <tr>
-              <th scope="row" data-item-id="103">Coke Mismo</th>
-              <td>&#8369; 25.00</td>
-              <td>100 available on stock</td>
+
+            <tr itemscope itemtype="https://schema.org/Product">
+              <th scope="row" data-item-id="103" itemprop="name">Coke Mismo</th>
+              <td itemprop="category">Beverage</td>
+              
+              <td itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="PHP">
+                &#8369; <span itemprop="price">25.00</span>
+              </td>
+              
+              <td itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                <link itemprop="availability" href="https://schema.org/InStock">
+                100 available on stock
+              </td>
             </tr>
+
           </tbody>
           <tfoot>
             <tr>
