@@ -20,7 +20,18 @@
     
       <header>
         <h1>Welcome to Aling Nena's Sari Sari Store</h1>
-        <img src="store_front.jpg" alt="Sample Picture of the Store Front" title="Aling Nena's Storefront Showcase" width="700" height="500">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="store_front.jpg">
+          <source media="(min-width: 600px)" srcset="store_front.jpg">
+          <img 
+            src="store_front.jpg" 
+            alt="Sample Picture of the Store Front" 
+            title="Aling Nena's Storefront Showcase" 
+            width="800" 
+            height="600" 
+            loading="lazy"
+          >
+        </picture>
         <section id="media-showcase" class="card">
           <h2>Store Audio & Video Showcase</h2>
           <h3>Store Promotional Jingle</h3>
@@ -50,7 +61,7 @@
         <h2>Store Announcements</h2>
         <h3>Today's Specials</h3>
         <p>The store opens from 8am to 5pm every day.</p>
-        <p>Spend ₱1,000, save ₱100; spend ₱2,500, save ₱350.</p>
+        <p>Spend &#8369;1,000, save &#8369;100; spend &#8369;2,500, save &#8369;350.</p>
       </section>
 
       <section id="inventory" class="card">
@@ -83,18 +94,18 @@
             <tr>
               <th scope="row" data-item-id="101">Piattos</th>
               <td>Food</td>
-              <td>20.00</td>
+              <td>&#8369; 20.00</td>
               <td>20 available on stock</td>
             </tr>
             <tr>
               <th scope="row" data-item-id="102">Coffee</th>
               <td rowspan="2">Beverage</td>
-              <td>8.00 per stick</td>
+              <td>&#8369; 8.00 per stick</td>
               <td>80 box available(40 pcs. per stock)</td>
             </tr>
             <tr>
               <th scope="row" data-item-id="103">Coke Mismo</th>
-              <td>25.00</td>
+              <td>&#8369; 25.00</td>
               <td>100 available on stock</td>
             </tr>
           </tbody>
@@ -107,6 +118,16 @@
         </table>
       </section>
       
+
+      <section id="testimonials" class="card">
+      <h3>Customer Testimonials</h3>
+      <blockquote lang="ar" dir="rtl">
+        <p>متجر ممتاز وخدمة رائعة!</p>
+        <cite lang="en" dir="ltr">— International Tourist Review</cite>
+      </blockquote>
+    </section>
+
+    
       <section id="pre-order-form" class="card" aria-labelledby="preorder-title">
         <h3 id="preorder-title">Pre-Order Form</h3>
         <form action="#" method="post">
@@ -188,13 +209,13 @@
       </section>
       <aside>
         <dl>
-          <dt>Tingi</dt>
+          <dt lang="fil">Tingi</dt>
           <dd>The practice of selling items in small, individual, or retail quantities (e.g., a single cigarette, a single sachet of shampoo) rather than by the full pack.</dd>
 
-          <dt>Pautang</dt>
+          <dt lang="fil">Pautang</dt>
           <dd>A store credit ledger system that allows trusted regular customers to buy goods now and pay for them later, usually tracked in a physical notebook or digital log.</dd>
 
-          <dt>Patong</dt>
+          <dt lang="fil">Patong</dt>
           <dd>The micro-markup or profit margin added to the wholesale cost of an item, typically calculated per piece or unit.</dd>
         </dl>
       </aside>
