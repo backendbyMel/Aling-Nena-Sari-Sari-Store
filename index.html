@@ -16,7 +16,7 @@
         <section id="media-showcase" class="card">
           <h2>Store Audio & Video Showcase</h2>
           <h3>Store Promotional Jingle</h3>
-          <audio controls>
+          <audio controls aria-label="Store Audio">
             <source src="jingle store audio.mp3" type="audio/mpeg">
             <source src="jingle store audio.ogg" type="audio/ogg">
               Your browser does not support the audio element.
@@ -24,7 +24,7 @@
 
         
           <h3>Virtual Store Tour</h3>
-          <video controls width="640" height="360">
+          <video controls width="640" height="360" aria-label="Store Video">
             <source src="jingle store video.mp4" type="video/mp4">
             <source src="jingle store video.webm" type="video/webm">
               Your browser does not support the video element.
@@ -99,34 +99,70 @@
         </table>
       </section>
       
-      <section id="pre-order-form">
-        <h3>Pre-Order Form</h3>
+      <section id="pre-order-form" class="card" aria-labelledby="preorder-title">
+        <h3 id="preorder-title">Pre-Order Form</h3>
         <form action="#" method="post">
           <fieldset>
             <legend>Personal Information</legend>
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Type your email..." required>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="Type your email..." 
+                aria-describedby="email-hint" 
+                required 
+                aria-required="true"
+              >
+              <p id="email-hint">We will send your order confirmation to this email address.</p>
               <label for="phone_number">Phone Number:</label>
-              <input type="tel" name="phone_number" id="phone_number" pattern="[0-9]{11}" placeholder="09123456789" required />
+              <input 
+                type="tel" 
+                id="phone_number" 
+                name="phone_number" 
+                pattern="[1, 4-11]{11}" 
+                placeholder="09123456789" 
+                aria-describedby="phone-hint" 
+                required 
+                aria-required="true"
+              >
+              <p id="phone-hint">Format: 11-digit Philippine mobile number (e.g., 09123456789).</p>
           </fieldset>
           <fieldset>
             <legend>Product Purchase Information</legend>
             <label for="product_name">Product:</label>
-            <select id="product_name" name="product_name">
-              <option value="">Please choose an option</option>
+            <select id="product_name" name="product_name" aria-required="true">
+              <option value="" disabled selected>Please choose an option</option>
               <option value="piattos">Piattos</option>
               <option value="coffee">Coffee</option>
               <option value="coke_mismo">Coke Mismo</option>
             </select>
             <label for="item_quantity">Item Quantity:</label>
-            <input type="number" id="item_quantity" name="item_quantity" min="20" max="100" required />
+            <input 
+                type="number" 
+                id="item_quantity" 
+                name="item_quantity" 
+                min="1" 
+                max="50" 
+                aria-describedby="qty-hint" 
+                required 
+                aria-required="true"
+              >
+              <p id="qty-hint">Minimum order is 1 item; maximum limit per order is 50 items.</p>
           </fieldset>
           <fieldset>
             <legend>Product Suggestions</legend>
 
             <div>
               <label for="suggest_product">Suggest a Product:</label>
-              <input list="product_suggestions" id="suggest_product" name="suggest_product" placeholder="Type or select a product...">
+              <input 
+                list="product_suggestions" 
+                id="suggest_product" 
+                name="suggest_product" 
+                placeholder="Type or select a product..." 
+                aria-describedby="suggest-hint"
+              >
+              <p id="suggest-hint">Optional: Tell us what snacks you want us to stock next!</p>
               
               <datalist id="product_suggestions">
                 <option value="Cigarette - Marlboro">
@@ -138,7 +174,7 @@
           </fieldset>
 
           
-          <button type="submit">Submit</button>
+          <button type="submit" aria-label="Submit Pre-Order Form">Submit</button>
 
         </form>
       </section>
